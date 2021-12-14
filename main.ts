@@ -1,0 +1,27 @@
+input.onButtonPressed(Button.A, function () {
+    basic.pause(100)
+    basic.showString("mama icin teşekkürler!şimdi yine uyku zamanı!!!")
+    basic.showIcon(IconNames.Asleep)
+    soundExpression.yawn.playUntilDone()
+})
+input.onGesture(Gesture.Shake, function () {
+    basic.showIcon(IconNames.Sad)
+    soundExpression.sad.playUntilDone()
+    basic.showIcon(IconNames.Asleep)
+    soundExpression.yawn.playUntilDone()
+})
+input.onLogoEvent(TouchButtonEvent.Touched, function () {
+    soundExpression.yawn.playUntilDone()
+    basic.showIcon(IconNames.Happy)
+    basic.showString("gunaydin.Mama istiyom!mama nerde?!")
+    basic.showIcon(IconNames.Sad)
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    basic.showIcon(IconNames.Happy)
+    soundExpression.giggle.playUntilDone()
+    basic.showIcon(IconNames.Asleep)
+    soundExpression.yawn.playUntilDone()
+})
+basic.showIcon(IconNames.Asleep)
+soundExpression.yawn.playUntilDone()
+basic.showIcon(IconNames.Asleep)
