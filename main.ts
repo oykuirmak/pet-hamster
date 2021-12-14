@@ -1,11 +1,13 @@
 input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Heart)
     basic.pause(100)
-    basic.showString("mama icin teşekkürler!şimdi yine uyku zamanı!!!")
+    basic.showString("mama icin tesekkurler!Simdi yine uyku zamani!!!")
     basic.showIcon(IconNames.Asleep)
     soundExpression.yawn.playUntilDone()
 })
 input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.Sad)
+    basic.showString("Neden beni uyandirdin?!?!")
     soundExpression.sad.playUntilDone()
     basic.showIcon(IconNames.Asleep)
     soundExpression.yawn.playUntilDone()
@@ -15,6 +17,10 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
     basic.showIcon(IconNames.Happy)
     basic.showString("gunaydin.Mama istiyom!mama nerde?!")
     basic.showIcon(IconNames.Sad)
+    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.Happy)
+    basic.showString("mama icin tesekkurler!Simdi yine uyku zamani!!!")
+    basic.showIcon(IconNames.Asleep)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showIcon(IconNames.Happy)
