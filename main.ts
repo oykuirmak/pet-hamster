@@ -8,7 +8,9 @@ input.onButtonPressed(Button.A, function () {
 input.onGesture(Gesture.Shake, function () {
     basic.showIcon(IconNames.Sad)
     basic.showString("Neden beni uyandirdin?!?!")
+    basic.showIcon(IconNames.Sad)
     soundExpression.sad.playUntilDone()
+    basic.showString("Bari yine uyuyak.")
     basic.showIcon(IconNames.Asleep)
     soundExpression.yawn.playUntilDone()
 })
